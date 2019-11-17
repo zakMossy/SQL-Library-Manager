@@ -1,0 +1,25 @@
+{
+  "name": "sql-library-manager",
+  "version": "1.0.0",
+  "description": "App for a local library to help them manage their collection of books.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zakMossy/SQL-Library-Manager.git"
+  },
+  "author": "Zak Mosbacher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zakMossy/SQL-Library-Manager/issues"
+  },
+  "homepage": "https://github.com/zakMossy/SQL-Library-Manager#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4",
+    "sequelize": "^5.21.2",
+    "sqlite3": "^4.1.0"
+  }
+}
