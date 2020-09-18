@@ -60,7 +60,7 @@ router.get('/:id', (req, res) => {
 });
 
 router.post('/:id', (req, res) => {
-    Books.findById(req.params.id)
+    Books.findByPk(req.params.id)
       .then(Book => {
           if(Book){
               return Book.update(req.body);
@@ -81,7 +81,7 @@ router.post('/:id', (req, res) => {
       .catch(err => console.log(err))
 });
 router.post('/:id/delete', (req, res) => {
-    Books.findById(req.params.id)
+    Books.findByPk(req.params.id)
       .then(Book => {
           if(Book){
               return Book.destroy();
